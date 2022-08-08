@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app column">
+        <div class="titulo">Coversor</div>
+        <div class="calculadora column">
+            <div class="dados">
+                <fieldset>
+                    <legend>Valor</legend>
+                    <input type="number" placeholder="Coloque o valor aqui!" id="valor" name="Valor" value="">
+                    <select title="Tipo numerico" name="Tipo numerico" id="tipo">
+                        <option value="Decimal" selected="selected">Decimal</option>
+                        <option value="Binario">Binario</option>
+                        <option value="Octal">Octodecimal</option>
+                        <option value="Hexa">Hexadecimal</option>
+                    </select>
+                    <button type="button" onclick="NumeroDoInput()" id="button">Calcular</button>
+                </fieldset>
+            </div>
+            <div class="resultado">
+                <div id="0" class="r r1">Resultado</div>
+                <div id="1" class="r r2">Resultado</div>
+                <div id="2" class="r r3">Resultado</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
